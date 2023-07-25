@@ -1,3 +1,97 @@
 2023-07-25 at 20:08:26 | INFO | Instance created
 2023-07-25 at 20:20:45 | INFO | Instance created
 2023-07-25 at 20:22:42 | INFO | Instance created
+2023-07-25 at 20:25:44 | INFO | Instance created
+2023-07-25 at 20:27:35 | INFO | Instance created
+2023-07-25 at 20:36:06 | INFO | Instance created
+2023-07-25 at 20:36:06 | ERROR | 'Books' object is not iterable
+2023-07-25 at 20:36:06 | ERROR | 'User' object is not iterable
+2023-07-25 at 20:36:43 | INFO | Instance created
+2023-07-25 at 20:36:43 | ERROR | (psycopg2.errors.UndefinedTable) relation "books" does not exist
+LINE 1: INSERT INTO books (id, name) VALUES (1, 'books')
+                    ^
+
+[SQL: INSERT INTO books (id, name) VALUES (%(id)s, %(name)s)]
+[parameters: {'id': 1, 'name': 'books'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-07-25 at 20:36:43 | INFO | users is loaded to db
+2023-07-25 at 20:49:48 | INFO | Instance created
+2023-07-25 at 20:49:48 | ERROR | (psycopg2.errors.UndefinedTable) relation "books" does not exist
+LINE 1: INSERT INTO books (id, name) VALUES (1, 'books')
+                    ^
+
+[SQL: INSERT INTO books (id, name) VALUES (%(id)s, %(name)s)]
+[parameters: {'id': 1, 'name': 'books'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-07-25 at 20:49:48 | ERROR | (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+[SQL: INSERT INTO users (id, name) VALUES (%(id)s, %(name)s)]
+[parameters: {'id': 1, 'name': 'HI'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-07-25 at 20:51:23 | INFO | Instance created
+2023-07-25 at 20:51:23 | INFO | books is loaded to db
+2023-07-25 at 20:51:23 | ERROR | (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+[SQL: INSERT INTO users (id, name) VALUES (%(id)s, %(name)s)]
+[parameters: {'id': 1, 'name': 'HI'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-07-25 at 20:52:31 | INFO | Instance created
+2023-07-25 at 20:52:31 | ERROR | (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "books_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+[SQL: INSERT INTO books (id, name) VALUES (%(id)s, %(name)s)]
+[parameters: {'id': 1, 'name': 'books'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-07-25 at 20:52:31 | ERROR | (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+[SQL: INSERT INTO users (id, name) VALUES (%(id)s, %(name)s)]
+[parameters: {'id': 1, 'name': 'HI'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-07-25 at 20:53:17 | INFO | Instance created
+2023-07-25 at 20:53:17 | DEBUG | {'id': 1, 'name': 'books'}
+2023-07-25 at 20:53:17 | DEBUG | {'id': 1, 'name': 'HI'}
+2023-07-25 at 20:54:25 | INFO | Instance created
+2023-07-25 at 20:54:25 | DEBUG | {'id': 1, 'name': 'books'}
+2023-07-25 at 20:54:25 | ERROR | (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "books_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+[SQL: INSERT INTO books (id, name) VALUES (%(id)s, %(name)s)]
+[parameters: {'id': 1, 'name': 'books'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-07-25 at 20:54:25 | DEBUG | {'id': 1, 'name': 'HI'}
+2023-07-25 at 20:54:47 | INFO | Instance created
+2023-07-25 at 20:54:47 | DEBUG | {'id': None, 'name': 'books'}
+2023-07-25 at 20:54:47 | ERROR | (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "books_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+[SQL: INSERT INTO books (name) VALUES (%(name)s) RETURNING books.id]
+[parameters: {'name': 'books'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-07-25 at 20:54:47 | DEBUG | {'id': None, 'name': 'HI'}
+2023-07-25 at 20:55:16 | INFO | Instance created
+2023-07-25 at 20:55:16 | DEBUG | {'id': None, 'name': 'booksdata'}
+2023-07-25 at 20:55:16 | INFO | books is loaded to db
+2023-07-25 at 20:55:16 | DEBUG | {'id': None, 'name': 'HI  sss'}
+2023-07-25 at 20:55:32 | INFO | Instance created
+2023-07-25 at 20:55:32 | DEBUG | {'id': None, 'name': 'booksdata'}
+2023-07-25 at 20:55:32 | INFO | books is loaded to db
+2023-07-25 at 20:55:32 | ERROR | (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+[SQL: INSERT INTO users (name) VALUES (%(name)s) RETURNING users.id]
+[parameters: {'name': 'HI  sss'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-07-25 at 20:55:32 | DEBUG | {'id': None, 'name': 'HI  sss'}
+2023-07-25 at 20:56:26 | INFO | Instance created
+2023-07-25 at 20:56:26 | DEBUG | {'id': None, 'name': 'booksdata'}
+2023-07-25 at 20:56:26 | INFO | books is loaded to db
+2023-07-25 at 20:56:26 | INFO | users is loaded to db
+2023-07-25 at 20:56:26 | DEBUG | {'id': None, 'name': 'HI  sss'}
+2023-07-25 at 20:57:11 | INFO | Instance created
+2023-07-25 at 20:57:11 | DEBUG | {'id': None, 'name': 'booksdata'}
+2023-07-25 at 20:57:11 | INFO | books is loaded to db
+2023-07-25 at 20:57:11 | DEBUG | {'id': None, 'name': 'HI  sss'}
+2023-07-25 at 20:57:12 | INFO | users is loaded to db
