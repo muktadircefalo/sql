@@ -22,4 +22,4 @@ services:
         db_ip:
             ipv4_address: 172.16.5.2
     volumes:
-      - /Users/cefalo/Desktop/RND/python/sql/data/postgres:/var/lib/postgresql/data
+      - /Users/cefalo/Desktop/RND/python/sql/infra/data/postgres:/var/lib/postgresql/data
