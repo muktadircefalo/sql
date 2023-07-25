@@ -22,7 +22,7 @@ connection = engine.connect()
 metadata = sqlalchemy.MetaData()
 
 today = date.today()
-file_name = str(today.strftime("File_LOG_%B__%d__%Y"))+'.log'
+file_name = str(today.strftime("sql_db_wrapper_log_%B_%d_%Y"))+'.log'
 if not os.path.exists('log'):
     os.makedirs('log')
 logger.add(f"{os.getcwd()}/log/{file_name}", format="{time:YYYY-MM-DD at HH:mm:ss} | {level} | {message}")
