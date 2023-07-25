@@ -10,5 +10,5 @@ __pycache__/
 infra/data/postgres
 
 .Python
-
+log/*
 __pypackages__/
