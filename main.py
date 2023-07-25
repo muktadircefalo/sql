@@ -15,8 +15,7 @@ user = User(
     name='HI  sss'
 )
 logger.debug(books.as_dict())
-load_to_db(Books(),[books.as_dict()])
+Books().save(data=[books.as_dict()])
 logger.debug(user.as_dict())
-load_to_db(User(),[user.as_dict()])
-
+User().save(data=[user.as_dict()])
 

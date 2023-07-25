@@ -95,3 +95,17 @@ DETAIL:  Key (id)=(1) already exists.
 2023-07-25 at 20:57:11 | INFO | books is loaded to db
 2023-07-25 at 20:57:11 | DEBUG | {'id': None, 'name': 'HI  sss'}
 2023-07-25 at 20:57:12 | INFO | users is loaded to db
+2023-07-25 at 20:59:41 | INFO | Instance created
+2023-07-25 at 20:59:41 | DEBUG | {'id': None, 'name': 'booksdata'}
+2023-07-25 at 20:59:41 | INFO | books is loaded to db
+2023-07-25 at 20:59:41 | DEBUG | {'id': None, 'name': 'HI  sss'}
+2023-07-25 at 20:59:41 | INFO | users is loaded to db
+2023-07-25 at 21:04:42 | INFO | Instance created
+2023-07-25 at 21:04:42 | DEBUG | {'id': None, 'name': 'booksdata'}
+2023-07-25 at 21:05:05 | INFO | Instance created
+2023-07-25 at 21:05:05 | DEBUG | {'id': None, 'name': 'booksdata'}
+2023-07-25 at 21:05:58 | INFO | Instance created
+2023-07-25 at 21:05:58 | DEBUG | {'id': None, 'name': 'booksdata'}
+2023-07-25 at 21:05:58 | INFO | books is loaded to db
+2023-07-25 at 21:05:58 | DEBUG | {'id': None, 'name': 'HI  sss'}
+2023-07-25 at 21:05:58 | INFO | users is loaded to db
