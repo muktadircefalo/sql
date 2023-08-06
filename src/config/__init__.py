@@ -25,4 +25,4 @@ today = date.today()
 file_name = str(today.strftime("sql_db_wrapper_log_%B_%d_%Y"))+'.log'
 if not os.path.exists('log'):
     os.makedirs('log')
-logger.add(f"{os.getcwd()}/log/{file_name}", format="{time:YYYY-MM-DD at HH:mm:ss} | {level} | {message}")
+logger.add(f"{os.getcwd()}/log/{file_name}", format="{time:YYYY-MM-DD at hh:mm:ss} | {level} | {message}")

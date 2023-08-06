@@ -5,17 +5,20 @@ logger.info('Instance created')
 
 from src.tables.user.user import User
 from src.tables.books.books import Books
-from src.db.load.load import load_to_db
 
 books = Books(
-    name='booksdata'
+    name='BB1',
+    year=2023,
+    published='NUN'
 )
-
+logger.info(engine)
 user = User(
-    name='HI  sss'
+    name='HI1'
 )
 logger.debug(books.as_dict())
-Books().save(data=[books.as_dict()])
+b = Books()
+b.save(data=[books.as_dict()])
 logger.debug(user.as_dict())
-User().save(data=[user.as_dict()])
+u = User()
+# u.save(data=[user.as_dict()])
 

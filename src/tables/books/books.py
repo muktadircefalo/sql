@@ -1,12 +1,22 @@
 from src.config import Base, engine
 from src.db.load.load import load_to_db
-from sqlalchemy import Column, Integer,String
+from sqlalchemy import Column, Integer,String, PrimaryKeyConstraint
 
 
 class Books(Base):
+
     __tablename__='books'
-    id = Column(Integer, primary_key=True,nullable=False)
-    name = Column(String,nullable=False)
+
+    name = Column(String, nullable=False, primary_key=True)
+    published = Column(String, nullable=False, primary_key=True)
+    year = Column(Integer, nullable=False)
+    writer = Column(String, nullable= False)
+    __table_args__ = (
+        PrimaryKeyConstraint(name, published),
+        {'schema': 'public'},
+    )
+
+
     def as_dict(self):
         """Convert object to dictionary"""
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}

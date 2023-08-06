@@ -14,4 +14,4 @@ class SQLConnection:
     @staticmethod
     def engine_instance():
         data = SQLConnection.read_credentials()
-        return create_engine(f"postgresql://{data['user']}:{data['password']}@{data['host']}:{data['port']}/processed_{data['dbname']}")
+        return create_engine(f"postgresql://{data['user']}:{data['password']}@{data['host']}:{data['port']}/{data['dbname']}")
